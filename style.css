@@ -123,11 +123,11 @@ section.partie2:hover {
 
 .partie2 h2 {
     width: auto;
-    height: auto;
+    height: 50px;
     color : rgb(243, 236, 236)
 }
-.partie2 .progressbar {    
-    width: 20px;
+.partie2 .progressbar img{   
+    width: 10px;
     height: 10px;
     color : rgb(255, 255, 255)
 }
