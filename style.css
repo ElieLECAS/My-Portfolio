@@ -121,6 +121,7 @@ nav .link a:hover {
 #contact img {
     position: absolute;
     object-fit: cover;
+    height: 100vh;
 }
 
 .partie2 {
