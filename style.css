@@ -1,12 +1,10 @@
 * {
-    margin :0;
+    margin: 0;
     width: 100vw;
     overflow-x: hidden;
 }
-body{
+body {
     background-color: rgb(0, 0, 0);
-    width: 100vw;
-    
 }
 
 nav {
@@ -22,11 +20,18 @@ nav {
 
 nav:hover {
     background-color: rgba(0, 0, 0, 0.075);
-    transition: .5s;
+    transition: 0.5s;
 }
-nav:hover a, nav:hover .link a {
-    color:rgb(223, 151, 110);
-    transition: .5s;
+nav:hover a,
+nav:hover .link a {
+    color: rgb(223, 151, 110);
+    transition: 0.5s;
+}
+
+nav:hover .link {
+    width: 27vw;
+    padding-top: 10px;
+    transition: 0.7s;
 }
 
 nav .title {
@@ -38,35 +43,39 @@ nav .title {
 
 nav .link {
     margin: 10px;
-    width: 20vw;
+    width: 25vw;
     display: flex;
     justify-content: space-between;
     gap: 3px;
-    right: 0;    
+    right: 0;
 }
 
-nav .link a{
+nav .link a {
     color: rgb(168, 84, 84);
     text-decoration: none;
 }
-
-.main {
-    
+nav .link a:hover {
+    color: rgb(190, 114, 114);
+    text-decoration: underline;
+    transition: 0.5s;
 }
-.main img {
+
+#apropos img {
     height: 100vh;
     object-fit: cover;
     margin: 0;
     padding: 0;
 }
 
-section.partie1{
+.partie1 {
+    margin: auto;
     background-color: rgba(95, 49, 49, 0.1);
     position: absolute;
     bottom: 6vh;
     left: 5vw;
     border-radius: 20px;
-    width: 30vw;
+    width: 20vw;
+    /* max-width: 400px; */
     height: 30vh;
     padding: 10px;
     display: flex;
@@ -75,59 +84,194 @@ section.partie1{
     justify-content: space-between;
 }
 
-section.partie1:hover {    
+.animate-partie1 {
+    animation-delay: 1s;
     height: 40vh;
-    transition: 0.7s;
     background-color: rgba(95, 49, 49, 0.3);
+    transition: 1s;
 }
-.partie1:hover h2, .partie1:hover p{
+
+.partie1:hover {
+    width: 30vw;
+}
+
+.partie1:hover h2,
+.partie1:hover p {
     color: antiquewhite;
+    transition: 0.7s;
 }
 
 .partie1 h2 {
     width: auto;
     height: auto;
-    color : rgb(68, 35, 35)
+    color: rgb(68, 35, 35);
 }
 .partie1 p {
     text-align: left;
     width: 100%;
-    color : rgb(63, 33, 33)
+    color: rgb(63, 33, 33);
 }
 
+#competences,
+#contact {
+    height: 100vh;
+}
 
-section.partie2{
-    background-color: rgba(65, 49, 95, 0.2);
+#competences img,
+#contact img {
     position: absolute;
-    top: 150vh;
+    object-fit: cover;
+}
+
+.partie2 {
+    background-color: rgba(131, 17, 123, 0.2);
+    position: relative;
+    top: 50vh;
     left: 50vw;
     border-radius: 20px;
-    width: 30vw;
-    height: 40vh;
+    width: 20vw;
+    height: 30vh;
     padding: 10px;
     display: flex;
     flex-flow: column;
     text-align: center;
     justify-content: space-between;
+    color: black;
 }
 
-section.partie2:hover {    
-    transition: 0.7s;
-    background-color: rgba(44, 26, 77, 0.2);
+.animate-partie2 {
+    /* Définissez ici votre animation CSS pour la partie 2 */
+    /* Par exemple, vous pouvez définir l'animation de largeur (width) ici */
     width: 40vw;
+    transition: 1s;
+    background-color: rgba(77, 49, 128, 0.5);
 }
 
-.partie2:hover h2, .partie2:hover p{
+.partie2:hover h2,
+.partie2:hover p {
     color: antiquewhite;
 }
 
 .partie2 h2 {
     width: auto;
     height: 50px;
-    color : rgb(243, 236, 236)
+    color: rgb(243, 236, 236);
 }
-.partie2 .progressbar img{   
-    width: 10px;
-    height: 10px;
-    color : rgb(255, 255, 255)
+
+.progressbar1,
+.progressbar2,
+.progressbar3,
+.progressbar4 {
+    position: absolute;
+    height: 1vh;
+    width: 85%;
+    background-color: rgb(134, 134, 134);
+    border-radius: 500px;
+}
+
+.progressbar1 {
+    top: 10vh;
+}
+.progressbar2 {
+    top: 15vh;
+}
+.progressbar3 {
+    top: 20vh;
+}
+.progressbar4 {
+    top: 25vh;
+}
+
+.animate-partie2 .python {
+    width: 60%;
+    transition: 5s;
+}
+
+.python {
+    background-color: rgb(90, 0, 117);
+    height: 1vh;
+    width: 10%;
+    border-radius: 500px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .grid {
+    width: 75vw;
+    display: flex;
+    position: relative;
+    /* bottom: 30vh; */
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    gap: 10vw;
+}
+
+#contact .partie3,
+#contact .partie4,
+#contact .partie5 {
+    background-color: rgba(65, 49, 95, 0.2);
+    border-radius: 20px;
+    width: 10vw;
+    height: 15vw;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+    transform: translate(0%, 0%);
+    transition: 0.7s;
+}
+
+#contact .animate-partie3,
+#contact .animate-partie4,
+#contact .animate-partie5 {
+    width: 20vw;
+    height: 20vw;
+    transition: 0.7s;
+}
+
+#contact .partie3:hover,
+#contact .partie4:hover,
+#contact .partie5:hover {
+    width: 35vw;
+    height: 25vw;
+}
+
+/* #contact .partie3:hover ~ .partie5 {
+    height: 15vw;
+    opacity: 0.5;
+}
+
+#contact .partie3:hover + .partie4 {
+    opacity: 0.8;
+}
+
+#contact .partie5:hover ~ .partie3 {
+    height: 15vw;
+} */
+
+#contact img {
+    height: 100vh;
+}
+
+#contact h2 {
+    top: 0;
+    width: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3e316b00;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    background-color: #b69b1300;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0a1d46;
+    border-radius: 3px;
 }
