@@ -57,3 +57,5 @@ const partie5 = document.querySelector("#contact .partie5");
 
 adjustHeightOnHover(partie3, partie5);
 adjustHeightOnHover(partie5, partie3);
+
+
