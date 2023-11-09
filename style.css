@@ -8,8 +8,6 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-
-
 nav {
     position: fixed;
     z-index: 2;
@@ -19,11 +17,12 @@ nav {
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
+    transition: 0.5s;
 }
 
 nav:hover {
     background-color: rgba(0, 0, 0, 0.075);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 nav:hover a,
@@ -33,7 +32,7 @@ nav:hover .link a {
 }
 
 nav:hover .link {
-    width: 27vw;
+    width: 30vw;
     padding-top: 10px;
     transition: 0.7s;
 }
@@ -48,9 +47,10 @@ nav .title {
 nav .link {
     margin: 10px;
     width: 25vw;
+    min-width: auto;
     display: flex;
     justify-content: space-between;
-    gap: 3px;
+    gap: 20px;
     right: 0;
 }
 
@@ -87,6 +87,7 @@ nav .link a:hover {
     flex-flow: column;
     text-align: center;
     justify-content: space-between;
+    transition: 1s;
 }
 
 .animate-partie1 {
@@ -103,19 +104,21 @@ nav .link a:hover {
 .partie1:hover h2,
 .partie1:hover p {
     color: antiquewhite;
-    transition: 0.7s;
+    transition: 2s;
 }
 
 .partie1 h2 {
     width: auto;
     height: auto;
     color: rgb(68, 35, 35);
+    transition: 1s;
 }
 
 .partie1 p {
     text-align: left;
     width: 100%;
     color: rgb(63, 33, 33);
+    transition: 1s;
 }
 
 #competences,
@@ -125,6 +128,7 @@ nav .link a:hover {
 
 #competences img,
 #contact img {
+    opacity: 0.5;
     position: absolute;
     object-fit: cover;
     height: 100vh;
@@ -137,18 +141,17 @@ nav .link a:hover {
     left: 50vw;
     border-radius: 20px;
     width: 20vw;
-    height: 30vh;
-    padding: 10px;
+    height: auto;
+    padding: 30px 10px;
     display: flex;
     flex-flow: column;
     text-align: center;
     justify-content: space-between;
     color: black;
+    gap: 25px;
 }
 
 .animate-partie2 {
-    /* Définissez ici votre animation CSS pour la partie 2 */
-    /* Par exemple, vous pouvez définir l'animation de largeur (width) ici */
     width: 40vw;
     transition: 1s;
     background-color: rgba(77, 49, 128, 0.5);
@@ -165,43 +168,61 @@ nav .link a:hover {
     color: rgb(243, 236, 236);
 }
 
-.progressbar1,
-.progressbar2,
-.progressbar3,
-.progressbar4 {
-    position: absolute;
-    height: 1vh;
+.langage {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 7px;
+}
+h3 {
+    padding-left: 25px;
+    text-align: left;
+    color: rgb(149, 2, 168);
+    width: 100%;
+    /* text-align: left; */
+}
+
+.progressbar {
+    left: 25px;
+    position: relative;
     width: 85%;
     background-color: rgb(134, 134, 134);
     border-radius: 500px;
 }
 
-.progressbar1 {
-    top: 10vh;
+.animate-partie2 .python,
+.animate-partie2 .sql,
+.animate-partie2 .html,
+.animate-partie2 .css,
+.animate-partie2 .gitGitHub {
+    transition: 2s;
 }
 
-.progressbar2 {
-    top: 15vh;
-}
-
-.progressbar3 {
-    top: 20vh;
-}
-
-.progressbar4 {
-    top: 25vh;
-}
-
-.animate-partie2 .python {
-    width: 60%;
-    transition: 5s;
-}
-
-.python {
+.python,
+.sql,
+.html,
+.css,
+.gitGitHub {
     background-color: rgb(90, 0, 117);
     height: 1vh;
     width: 10%;
     border-radius: 500px;
+}
+
+.animate-partie2 .html {
+    width: 80%;
+}
+.animate-partie2 .css {
+    width: 60%;
+}
+.animate-partie2 .python {
+    width: 40%;
+}
+.animate-partie2 .sql {
+    width: 35%;
+}
+.animate-partie2 .gitGitHub {
+    width: 55%;
 }
 
 #contact {

@@ -33,7 +33,7 @@ function observeSection(sectionSelector, animateClass, delay) {
 }
 
 observeSection(".partie1", "animate-partie1", 250);
-observeSection(".partie2", "animate-partie2", 250);
+observeSection(".partie2", "animate-partie2", 150);
 observeSection(".partie3", "animate-partie3", 50);
 observeSection(".partie4", "animate-partie4", 250);
 observeSection(".partie5", "animate-partie5", 500);
