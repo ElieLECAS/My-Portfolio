@@ -42,13 +42,15 @@ function adjustHeightOnHover(target, sibling) {
     target.addEventListener("mouseover", () => {
         target.style.height = "25vw";
         sibling.style.height = "15vw";
-        sibling.style.opacity = "0.5";
+        sibling.style.opacity = "0.2";
+        target.style.opacity = "1";
     });
 
     target.addEventListener("mouseout", () => {
         target.style.height = "20vw";
         sibling.style.height = "20vw";
-        sibling.style.opacity = "1";
+        sibling.style.opacity = "0.5";
+        target.style.opacity = "0.5";
     });
 }
 
