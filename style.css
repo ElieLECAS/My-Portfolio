@@ -148,7 +148,7 @@ nav .link a:hover {
 .partie2 {
     background-color: rgba(131, 17, 123, 0.2);
     position: relative;
-    top: 50vh;
+    top: 40vh;
     left: 50vw;
     border-radius: 20px;
     width: 20vw;
@@ -163,7 +163,9 @@ nav .link a:hover {
 }
 
 .animate-partie2 {
-    width: 40vw;
+    width: 30vw;
+    left: 55vw;
+    padding-bottom: 2%;
     transition: 1s;
     background-color: rgba(77, 49, 128, 0.5);
 }
@@ -184,13 +186,29 @@ nav .link a:hover {
     flex-flow: column;
     width: 100%;
     gap: 7px;
+    transition: 0.5s;
 }
+.langage:hover {
+    margin-bottom: 1%;
+}
+
+.langage:hover h3 {
+    left: 2%;
+    color: rgb(141, 2, 168);
+    transition: 1s;
+}
+.langage:hover .progressbar div {
+    background-color: rgb(141, 2, 168);
+}
+
 h3 {
+    left: 0;
+    position: relative;
     padding-left: 25px;
     text-align: left;
     color: rgb(149, 2, 168);
     width: 100%;
-    /* text-align: left; */
+    transition: 2s;
 }
 
 .progressbar {
@@ -203,15 +221,17 @@ h3 {
 
 .animate-partie2 .python,
 .animate-partie2 .sql,
+.animate-partie2 .javascript,
 .animate-partie2 .html,
 .animate-partie2 .css,
 .animate-partie2 .gitGitHub {
-    transition: 2s;
+    transition: 1s;
 }
 
 .python,
 .sql,
 .html,
+.javascript,
 .css,
 .gitGitHub {
     background-color: rgb(90, 0, 117);
@@ -225,6 +245,9 @@ h3 {
 }
 .animate-partie2 .css {
     width: 60%;
+}
+.animate-partie2 .javascript {
+    width: 20%;
 }
 .animate-partie2 .python {
     width: 40%;
@@ -321,7 +344,7 @@ h3 {
 #contact .partie3:hover,
 #contact .partie4:hover,
 #contact .partie5:hover {
-    opacity: 1;
+    opacity: .9;
     width: 25vw;
     height: 25vw;
 }

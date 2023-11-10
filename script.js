@@ -41,14 +41,18 @@ observeSection(".partie5", "animate-partie5", 500);
 function adjustHeightOnHover(target, sibling) {
     target.addEventListener("mouseover", () => {
         target.style.height = "25vw";
+        target.style.width = "25vw";
         sibling.style.height = "15vw";
+        sibling.style.width = "15vw";
         sibling.style.opacity = "0.2";
-        target.style.opacity = "1";
+        target.style.opacity = ".9";
     });
 
     target.addEventListener("mouseout", () => {
         target.style.height = "20vw";
+        target.style.width = "20vw";
         sibling.style.height = "20vw";
+        sibling.style.width = "20vw";
         sibling.style.opacity = "0.5";
         target.style.opacity = "0.5";
     });
